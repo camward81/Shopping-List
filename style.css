@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: whitesmoke;
+}
+
+.enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.enter-item,
+.btn {
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  background: whitesmoke;
+}
+
+.btn {
+  color: rgba(255, 0, 0, 0.925);
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: whitesmoke;
+  background: rgba(255, 0, 0, 0.925);
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-list {
+  list-style: none;
+  min-width: 30%;
+}
+
+.list {
+  margin: 10px;
+  background: whitesmoke;
+  color: black;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  padding-right: 7px;
+}
+
+.list li {
+  flex: 1;
+}
+
+.list-item {
+  padding: 5px 10px;
+}
+
+.check-btn,
+.trash-btn {
+  padding: 9px;
+  background: whitesmoke;
+  border: none;
+  font-size: 17px;
+  color: red;
+  cursor: pointer;
+}
+
+.trash-btn {
+  color: black;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  background: rgb(255, 255, 46);
+  opacity: 0.5;
+}
